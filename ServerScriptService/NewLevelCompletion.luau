@@ -20,8 +20,9 @@ local function LoadData(Player)
         Player = Player
     }
 
-    DatastoreHandler:LoadAsync()
+    local LoadedData = DatastoreHandler:LoadAsync(DataTable)
     
+    table.insert(DataCatalogue, LoadData)
 end
 
 -- Behaviour --
