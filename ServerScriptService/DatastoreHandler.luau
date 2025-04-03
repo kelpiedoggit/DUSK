@@ -24,9 +24,9 @@ function Handler:LoadAsync(TargetTable: DataTable) : DataTable
 
     local success, result
 
-    
-
     local LoadedData : DataTable
+
+    
 
     return LoadedData
 end
