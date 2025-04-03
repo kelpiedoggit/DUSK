@@ -27,7 +27,7 @@ function Handler:LoadAsync(TargetTable: DataTable) : DataTable
 
     local LevelDatastore = DatastoreService:GetDataStore("LevelsCompleted")
 
-    local Key = TargetTable.Player.UserId
+    local Key : number = TargetTable.Player.UserId
     local Data 
 
     local success, result
