@@ -14,6 +14,14 @@ function Handler.CreateTable(Player)
     return LevelTable
 end  
 
+function Handler:SaveAsync(TargetTable: DataTable)
+    local DatastoreService = game:GetService("DataStoreService")
+
+    local LevelDatastore = DatastoreService:GetDataStore("LevelsCompleted")
+
+    
+end
+
 function Handler:LoadAsync(TargetTable: DataTable) : DataTable
     local DatastoreService = game:GetService("DataStoreService")
 
@@ -26,14 +34,12 @@ function Handler:LoadAsync(TargetTable: DataTable) : DataTable
 
     local LoadedData : DataTable
 
-    
+
 
     return LoadedData
 end
 
-function Handler:SaveAsync(TargetTable: DataTable)
 
-end
 
 
 
