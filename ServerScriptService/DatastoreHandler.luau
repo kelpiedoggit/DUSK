@@ -6,7 +6,7 @@ export type DataTable = {
 
 local Handler = {}
 
-function Handler.CreateTable(Player)
+function Handler.CreateTable(Player: Player)
     local LevelTable = {
         LevelOne = false,
     }
@@ -34,7 +34,7 @@ function Handler:LoadAsync(TargetTable: DataTable) : DataTable
 
     local LoadedData : DataTable
 
-
+    
 
     return LoadedData
 end
